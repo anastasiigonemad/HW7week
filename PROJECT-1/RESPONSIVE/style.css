@@ -5,10 +5,10 @@
 
 header {
     display: block ;
-    margin: auto;
+    margin: 0;
     text-align: center;
     font-family: Lato;
-    font-size: 4rem;
+    font-size: 4em;
     border-bottom: 2px solid black;
     width: 100%;
 }
@@ -19,27 +19,34 @@ main {
     grid-template-rows: 1fr;
     grid-column-gap: 1em;
     grid-row-gap: 1em;
-    margin: 1em;
-    padding: 2em;
-    width: 90%;
+    margin-top: 1em;
+    margin-left: -1.5em;
+    padding: 0;
+    width: 100%;
+    height: auto;  
 }
+
 .section-1 li{
     list-style-type: none;
-    margin: 2em;
-    padding: 1em;
-    font-size: 1.5rem;
+    padding-top: 2em;
+    font-size: 1em;
     font-family: sans-serif;
     align-self: center;
+}
+
+.section-1, .section-2, .section-3, .section-4 {
+    width: 90%;
 }
 
 main p {
     font-family: Lato, sans-serif;
     text-align: center;
+    font-size: small;
 }
+
 main img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
-    object-fit: cover;
 }
 
 footer {
@@ -47,10 +54,18 @@ footer {
     grid-template-columns: repeat(3, 1fr);
     width: 100%;
     height: auto;
+    margin-top: 3em;
+    margin-bottom: 3em;
 }
 
-footer ul li {
+.footer_nav_1, .footer_nav_2, .footer_nav_3 {
+    width: 70%;
+    height: auto;
+}
+
+footer li {
     list-style-type: none;
     font-family: Lato, sans-serif;
-    padding: 0.5em;
+    padding-bottom: 0.8em;
+    font-size: 0.6em;
 }
